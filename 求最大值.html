@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getArrMax(arr) {
+            var max = arr[0];
+            for(var i = 1; i <= arr.length; i++){
+                if(arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        var re = getArrMax([7,55,9,88,111,30]);
+        console.log(re);
+        //任意
+        function getMax() {
+            var max = arguments[0];
+            for (var i = 1; i < arguments.length;i++){
+                if(arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        console.log(getMax(77,33,66,99));
+        console.log(getMax(77,33,66,99,109));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
